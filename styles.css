@@ -21,6 +21,7 @@ button{
 }
 #player-1-rock, #player-1-paper, #player-1-scissors{
     position: relative;
+    transform: rotate(180deg);
 }
 img{
     width: 150px;
@@ -28,5 +29,5 @@ img{
 }
 .player-2{
     position: relative;
-    top: 150px;
+    top: 90px;
 }
