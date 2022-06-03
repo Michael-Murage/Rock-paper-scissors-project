@@ -1,0 +1,31 @@
+body{
+    background-color: #000;
+}
+.container{
+    height: 500px;
+    width: 400px;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+    background-color: blue;
+}
+button{
+    height: 20px;
+    width: 50px;
+}
+#player-2-rock, #player-2-scissors, #player-2-paper{
+    position: relative;
+    /* top: 485px; */
+    bottom: 0px;
+}
+#player-1-rock, #player-1-paper, #player-1-scissors{
+    position: relative;
+}
+img{
+    width: 150px;
+    height: 150px;
+}
+.player-2{
+    position: relative;
+    top: 150px;
+}
