@@ -12,6 +12,7 @@ body{
 button{
     height: 20px;
     width: 50px;
+    background-color: orangered;
 }
 #player-2-rock, #player-2-scissors, #player-2-paper{
     position: relative;
