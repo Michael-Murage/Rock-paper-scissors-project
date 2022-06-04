@@ -1,3 +1,9 @@
+const resizeOps = () => {
+   document.documentElement.style.setProperty("--vh", window.innerHeight * 0.01 + "px");
+};
+resizeOps();
+window.addEventListener("resize", resizeOps);
+
 const rock1 = document.querySelector('#player-1-rock')
 const paper1 = document.querySelector('#player-1-paper')
 const sciss1 = document.querySelector('#player-1-scissors')
