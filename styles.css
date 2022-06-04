@@ -22,12 +22,27 @@ button{
 #player-1-rock, #player-1-paper, #player-1-scissors{
     position: relative;
     transform: rotate(180deg);
+    bottom: 10em;
+    right: 5.8em;
 }
-img{
+img.player-1{
+    position: relative;
     width: 150px;
     height: 150px;
+    top: 1.7em;
+    left: 5em;
 }
 .player-2{
     position: relative;
-    top: 90px;
+    top: 85px;
+}
+img.player-2{
+    position: relative;
+    width: 150px;
+    height: 150px;
+}
+h2{
+    position: absolute;
+    left: 6.3em;
+    top: 9em;
 }
