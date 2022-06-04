@@ -4,12 +4,19 @@
 //  resizeOps();
 //  window.addEventListener("resize", resizeOps);
  
- const rock1 = document.querySelector('#player-1-rock')
- const paper1 = document.querySelector('#player-1-paper')
- const sciss1 = document.querySelector('#player-1-scissors')
- const rock2 = document.querySelector('#player-2-rock')
- const paper2 = document.querySelector('#player-2-paper')
- const sciss2 = document.querySelector('#player-2-scissors')
+const rock = document.createElement('img')
+rock.setAttribute('src', './rock.png')
+
+const scissors = document.createElement('img')
+scissors.setAttribute('src', './scissors.png')
+
+const paper = document.createElement('img')
+paper.setAttribute('src', './paper.jpeg')
+
+const blank = document.createElement('img')
+blank.setAttribute('src', './blank.jpeg')
+
+
  const imgDisplay1 = document.querySelector('img.player-1')
  const imgDisplay2 = document.querySelector('img.player-2')
 
@@ -48,20 +55,19 @@
  function results(){
      if(imgDisplay1.src === imgDisplay2.src){
          ready.innerHTML = 'It\'s a draw'
-      }else if(imgDisplay1.src === './rock.png' && imgDisplay2.src === './scissors.png'){
+      }else if(imgDisplay1.src === rock.src && imgDisplay2.src === scissors.src){
          ready.innerHTML = 'You lose'
-     }else if(imgDisplay1.src === './rock.png' && imgDisplay2.src === './paper.jpeg'){
+     }else if(imgDisplay1.src === rock.src && imgDisplay2.src === paper.src){
         ready.innerHTML = 'You win'
-    }else if(imgDisplay1.src === './paper.jpeg' && imgDisplay2.src === './scissors.png'){
+    }else if(imgDisplay1.src === paper.src && imgDisplay2.src === scissors.src){
         ready.innerHTML = 'You win'
-    }else if(imgDisplay1.src === './paper.jpeg' && imgDisplay2.src === './rock.png'){
+    }else if(imgDisplay1.src === paper.src && imgDisplay2.src === rock.src){
         ready.innerHTML = 'You lose'
-    }else if(imgDisplay1.src === './scissors.png' && imgDisplay2.src === './rock.png'){
+    }else if(imgDisplay1.src === scissors.src && imgDisplay2.src === rock.src){
         ready.innerHTML = 'You win'
-    }else if(imgDisplay1.src === './scissors.png' && imgDisplay2.src === './paper.png'){
+    }else if(imgDisplay1.src === scissors.src && imgDisplay2.src === paper.src){
         ready.innerHTML = 'You lose'
     }
 
  }
-
  
