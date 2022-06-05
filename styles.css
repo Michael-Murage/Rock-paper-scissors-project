@@ -50,3 +50,11 @@ h2{
     left: 6.3em;
     top: 9em;
 }
+h4.player-2{
+    position: absolute;
+    top: 10em;
+}
+h4.player-1{
+    position: absolute;
+    top: 2em;
+}
