@@ -1,1 +1,1 @@
-The program is supposed to play rock-paper-scissors especially on phone and is supposed to be a two-player game for now
+The program is supposed to play rock-paper-scissors especially on phone. The game has computer mode (fully operational) and 2-player mode (slightly buggy). Mobile compatibility issues to be fixed.
